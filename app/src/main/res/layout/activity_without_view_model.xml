@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:layout_width="match_parent"
+             android:fillViewport="true"
+             android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="30dp"
+    >
+
+        <androidx.appcompat.widget.Toolbar
+                android:id="@+id/tootBar"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_width="0dp"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:theme="@style/ThemeOverlay.AppCompat.Light"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                android:contentInsetLeft="0dp"
+                android:contentInsetRight="0dp"
+                android:fontFamily="@font/notosans_medium"
+        />
+
+        <TextView
+                android:text="TEAM 1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvTeam1"
+                app:layout_constraintTop_toBottomOf="@+id/tootBar"
+                android:layout_marginTop="20dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/notosans_medium"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintEnd_toStartOf="@+id/view"/>
+
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvCountTeam1"
+                android:textSize="50sp"
+                android:text="500"
+                app:layout_constraintTop_toBottomOf="@+id/tvTeam1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/view"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/notosans_medium"
+        />
+
+        <Button android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:text="+3 Points"
+                android:id="@+id/btnPlus3PointsTeam1"
+                android:background="@color/colorPrimary"
+                app:layout_constraintTop_toBottomOf="@+id/tvCountTeam1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/view"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/notosans_medium"
+        />
+
+        <Button android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:text="+2 Points"
+                android:id="@+id/btnPlus2PointsTeam1"
+                android:background="@color/colorPrimary"
+                app:layout_constraintTop_toBottomOf="@+id/btnPlus3PointsTeam1"
+                app:layout_constraintLeft_toLeftOf="@+id/btnPlus3PointsTeam1"
+                app:layout_constraintRight_toRightOf="@+id/btnPlus3PointsTeam1"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/notosans_medium"
+        />
+
+        <Button android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:text="+1 Points"
+
+                android:id="@+id/btnPlus1PointsTeam1"
+                android:background="@color/colorPrimary"
+                app:layout_constraintTop_toBottomOf="@+id/btnPlus2PointsTeam1"
+                app:layout_constraintLeft_toLeftOf="@+id/btnPlus3PointsTeam1"
+                app:layout_constraintRight_toRightOf="@+id/btnPlus3PointsTeam1"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/notosans_medium"
+        />
+
+        <TextView
+                android:text="TEAM 2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvTeam2"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/tootBar"
+                android:layout_marginTop="20dp"
+                android:textSize="20sp"
+                android:fontFamily="@font/notosans_medium"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/view"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvCountTeam2"
+                android:textSize="50sp"
+                android:text="500"
+                app:layout_constraintTop_toBottomOf="@+id/tvTeam1"
+                app:layout_constraintLeft_toRightOf="@+id/view"
+                app:layout_constraintRight_toRightOf="parent"
+                android:gravity="center"
+                android:fontFamily="@font/notosans_medium"
+                android:layout_marginTop="20dp"
+        />
+
+        <Button android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:text="+3 Points"
+                android:id="@+id/btnPlus3PointsTeam2"
+                android:background="@color/colorPrimary"
+                app:layout_constraintTop_toBottomOf="@+id/tvCountTeam2"
+                app:layout_constraintLeft_toRightOf="@+id/view"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/notosans_medium"
+        />
+
+        <Button android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:text="+2 Points"
+                android:id="@+id/btnPlus2PointsTeam2"
+                android:background="@color/colorPrimary"
+                app:layout_constraintTop_toBottomOf="@+id/btnPlus3PointsTeam2"
+                app:layout_constraintLeft_toLeftOf="@+id/btnPlus3PointsTeam2"
+                app:layout_constraintRight_toRightOf="@+id/btnPlus3PointsTeam2"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/notosans_medium"
+        />
+
+        <Button android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:text="+1 Points"
+                android:id="@+id/btnPlus1PointsTeam2"
+                android:background="@color/colorPrimary"
+                app:layout_constraintTop_toBottomOf="@+id/btnPlus2PointsTeam2"
+                app:layout_constraintLeft_toLeftOf="@+id/btnPlus3PointsTeam2"
+                app:layout_constraintRight_toRightOf="@+id/btnPlus3PointsTeam2"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/notosans_medium"
+        />
+
+        <View
+                android:layout_width="4dp"
+                android:layout_height="350dp"
+                android:background="#B3AFAF"
+                android:id="@+id/view"
+                app:layout_constraintTop_toBottomOf="@+id/tootBar"
+                android:layout_marginTop="20dp"
+                app:layout_constraintStart_toEndOf="@+id/tvTeam1"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintEnd_toStartOf="@+id/tvTeam2"/>
+
+
+        <Button android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:text="Reset"
+                android:id="@+id/btnReset"
+                android:background="@color/colorPrimaryDark"
+                app:layout_constraintTop_toBottomOf="@+id/view"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:fontFamily="@font/notosans_medium"
+        />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ViewModel Sample</string>
+    <string name="without_view_model">Without ViewModel</string>
+    <string name="with_view_model">With ViewModel</string>
+</resources>
